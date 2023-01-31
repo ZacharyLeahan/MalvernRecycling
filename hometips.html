@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Malvern Recycling - Local Parenting Tips</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Malvern, PA Tips</a>
+					</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li><a href="index.html">Recycling Tips</a></li>
+						<li><a href="resources.html">Green Resources</a></li>
+						<li><a href="parentingtips.html">Parenting Tips</a></li>
+						<li class="active"><a href="hometips.html">Home Tips</a></li>
+
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Home Tips</h1>
+								</header>
+
+								<!-- Text stuff -->
+									<h3>Tips</h3>
+									<dl>
+										<dt>Green Home</dt>
+										<dd>
+											<ul>
+											<li>Peco offers a free <a href="https://www.peco.com/WaysToSave/ForYourHome/Pages/FreeEnergyCheckup.aspx" target="_blank">"Free Energy Checkup"</a> where someone inspects your home and gives you an "personalized report with recommendations for improving your home's energy efficiency"
+										</dd>
+										<dt>Home improvement tips</dt>
+										<dd>
+											<dd>
+												<ul>
+												<li><a href="https://www.facebook.com/groups/621131024633035" target="_blank">Malvern Community Forum</a> has a lot of posts asking for local contractor recommentations.</li>
+												<li>Make sure the contract has all of the scope of work before signing.</li>
+												<li>If it is a solar project, make sure the interconnection agreement with Peco is approved before the installer starts the work (so you get the "net metering" credits when you overproduce electricity)</li>
+												<li>Never pay an invoice in full when work is still pending.</li>
+												<li>If it is a large project, engage 3d designers on fiverr (e.g. "<a href="https://www.fiverr.com/search/gigs?query=bathroom design" target="_blank">bathroom design</a>") to make a 3d render of your designed project. This will cost only $100-$400.</li>
+											</ul>										</dd>
+										<dt>Public data on housing</dt>
+										<dd>
+											<ul><li>Your name, purchase price, address, and mortgage details are public information assessible via <a href="https://www.chesco.org/2198/ChescoViews" target="_blank">Chester County's GIS ChescoViews</a></li></ul>
+										</dd>
+						 <!-- 				<dt>Township permits</dt>
+										<dd>
+											<ul><li>Getting permits is the legal way to update make major updates to your home.</li></ul>
+										</dd> 
+									-->
+										<dt>Door to door Soliciting</dt>
+										<dd>
+											<ul>
+												<li>In Willistown, door to door soliciting without a township provided license is illegal. Call 911 for the police to come out. Tell them the direction of the solictor and physical description. See <a href="https://ecode360.com/11713253" target="_blank">"Chapter 97 Peddling and Soliciting"</a> details and exemptions.</p>
+												</li></ul></dd>								
+											</dl>	
+							</div>
+				</div>
+								<!-- Footer -->
+								<footer id="footer">
+									<section>
+										<form id="contact" onsubmit="return postToGoogle();">
+											<h3>Send us feedback (yes we will update the website):</h3>
+											<fieldset>
+											  <input  placeholder="Type here w/ tips or corrections."
+													  type="text" 
+													  name="entry.1243370362" 
+													  data-name="Feedback" 
+													  id="Feedback" 
+													  required>
+													</fieldset>
+												<fieldset>
+											  <button type="submit" id="contact-submit">Submit</button>
+											</fieldset>
+										  </form>
+									</section>
+								</footer>
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; MALVERN RECYCLING</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+				</div>
+
+		</div>
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    function postToGoogle() {
+      var field1 = $("#Feedback").val();
+
+      $.ajax({
+        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSetAUOUkl2z7l7xQjp3LVD_XLYDjf3iyfVtylpxNfpbi9z8_w/formResponse",
+          
+        //add your google form generated numbers below which are also the 'names' of your inputs     
+        data: {
+          "entry.1243370362": field1
+        },
+        type: "POST",
+        dataType: "xml",
+        success: function (d) {
+          $('#contact').trigger('reset');
+        },
+        error: function (x, y, z) {
+          $('#contact').trigger('reset');
+        }
+      });
+      return false;
+    }
+  </script>
+	</body>
+</html>
